@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/************************************INDEX****************************************/
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "sectionpresentacion sectionpresentacion sectionpresentacion"
+    "sectionpromoEstelar sectionpromoEstelar sectionpromoEstelar"
+    "sectiontexto sectiontexto sectiontexto"
+    "footer footer footer"
+    ;
+    grid-template-rows:  0.5fr 8fr 9fr 7fr 2fr;
+    grid-template-columns: 18fr;
+}
+
+header {
+    grid-area: header;
+}
+
+section.presentacion{
+    grid-area: sectionpresentacion;
+    background-image: url(./img/fondo.jpg);
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+}
+
+section.promoEstelar{
+    grid-area: sectionpromoEstelar;
+    background-color: #5b3a29;
+    
+}
+section.texto{
+    grid-area: sectiontexto;
+    background-color: #E59866;
+}
+footer {
+    grid-area: footer;
+}
+
+.promoEstelar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.presentacion h1 {
+    color: white;
+    font-size: 5rem;
+
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto span {
+    opacity: 0.2;
+}
+
+.texto h3 {
+    opacity: 0.6; 
+}
+
+/*******************************************************************RESERVACION**************************************************************************/
+
+.datosHijo1 {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+
+.datosHijo2 {
+    padding-bottom: 3rem;
+}
+
+.selector {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3rem;
+}
+
+.selectorHijo1 {
+    width: 100%;
+    padding-right: 2rem;
+}
+
+.radios {
+    padding-bottom: 5rem;
+}
+
+.aviso {
+    padding-bottom: 7rem;
+    padding-top: 1rem;
+}
+
+.form {
+    padding-top: 8rem;
+}
+/***********************************************************UBICACION***************************************************/
+.sucursales {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.mapa2Hijo1 {
+    padding-top: 4rem;
+}
+
+.mapa3Hijo1 {
+    padding-top: 4rem;
+}
+
+
+
+
+
+
+
+
+/**************************************************************FOOTER******************************************************************************/
+.footer {
+    background: black;
+    color: white;
+  
+}
+
+.footer__flex {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.footer__menu {
+   /* list-style: none;*/
+    font-size: medium;
+    padding-top: 2rem;
+    
+}
+
+.footer__menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__credito {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+
+}
+
+
+.lateral {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+}
+.lateral label {
+    font-size: medium;
+}
+.flexSuscribete {
+    padding-top: 2.2rem;
+    padding-left: 2rem;
+}
